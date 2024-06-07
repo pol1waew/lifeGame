@@ -15,7 +15,8 @@ public class game {
     private JLabel currentTurnLabel;
 
     public game(int[] fieldSize) {
-        _field = new field(this, fieldSize[0], fieldSize[1]);
+        //_field = new field(this, fieldSize[0], fieldSize[1]);
+        _field = new crossField(this, fieldSize[0], fieldSize[1], 3);
     }
 
     public void initiateEvolution() {
